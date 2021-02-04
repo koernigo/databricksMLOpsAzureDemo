@@ -1,5 +1,7 @@
 # Introduction 
 
+#THIS CODE IS PROVIDED WITH ABSOLUTELY NO WARRANTY OR SUPPORT AND SHOULD ONLY SERVE AS A DEMO OF THE AVAILABLE FEATURES
+
 This project demonstrates the use of Azure DevOps as the tool to work with ML Pipelines in Azure Databricks.-
 
 Workflow Steps

@@ -89,6 +89,5 @@ def main():
         print('Waiting for job to finish. Current state is: '+current_state)
     print('Job finished successfully. Result state is: ' + result_state)
 
-
 if __name__ == '__main__':
     main()

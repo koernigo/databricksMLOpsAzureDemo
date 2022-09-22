@@ -33,16 +33,21 @@ def main():
             params = arg
         elif opt in ('-j', '--job_id'):
             job_id = arg
-    print('-s is ' + shard)
+    print('--shard is ' + shard)
     #print('-t is ' + token)
-    print('-p is ' + params)
-    print('-p is ' + job_id)
+    print('--params are ' + params)
+    print('--job_id is ' + job_id)
     # Generate array from walking local path
         
     #Create json from inout parameter list
-    paramList = params.split(',')
+    if params == '':
+        paramList = list()
+    else:
+        paramList = params.split(',')
+    print("paramlist is "+str(paramList))
     jsonString = '{'
     for param in paramList:
+        print("Param is "+param)
         if jsonString != '{':
             jsonString=jsonString+','
         paramElement = param.split('=')
